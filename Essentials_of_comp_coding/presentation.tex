@@ -1,0 +1,198 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{caption}
+\mode<presentation>{
+\usetheme{Warsaw}
+}
+\title{Essentials of Competitive Coding}
+\author{Suyash Agrawal}
+\date{September 19, 2017}
+\begin{document}
+	\begin{frame}
+	\titlepage	
+	\end{frame}
+	\section{Introduction}
+		\subsection{Motivation and Background}
+			\begin{frame}{What is it?}
+				\uncover<+->{Here is what wikipedia says:\\}
+				\uncover<+->{
+				\begin{quote}
+					Competitive programming is a mind sport usually held over the Internet or a local network,
+					involving participants trying to program according to provided specifications.
+				\end{quote}
+				}
+				\uncover<+->{Why is it useful?\\}
+				\begin{itemize}
+					\item<+-> You will become a better, more efficient, and less error-prone coder.
+					\item<+-> Your technical programming interviews will be a piece of cake.
+					\item<+-> You win prizes and trips to places around the world as you compete with and meet
+					 other motivated and smart students.
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Pre-requisites}
+				Here are some pre requisites:
+				\pause
+				\begin{itemize}
+					\item<+-> Language basic of either C++ or Java.
+					\item<+-> Basic algorithmic skills.
+					\item<+->[] \textit{And most importantly,}
+					\item<+-> Perseverance
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Mathematics}
+				Some knowledge of mathematics is required too, like:
+				\pause
+				\begin{itemize}
+					\item<+-> Modulo Arithmetic \textit{Basic Number Theory}
+					\item<+-> Fast Exponentiation
+					\item<+-> Complexity Analysis
+					\item<+-> Sieve of Eratosthenes
+					\item<+-> Basic Geometry
+				\end{itemize}
+				\uncover<+->{Don't worry even if you have no idea about these. You will easily pick these up
+				as you practice along.}
+			\end{frame}
+			\begin{frame}{Problem Structure}
+				Basic structure of the problem is as follows:
+				\begin{itemize}
+					\item<2->\textbf{Problem Statement}: Describes the problem and what output is to be generated.
+					Usually in form of a long story from which you have to extract the essence.
+					\item<3->\textbf{Input}: Describes the format of input. Read carefully as missing out
+					any minor detail lands you in wrong answer zone.
+					\item<4->\textbf{Output}: Describes the output format of the problem . Just like above,
+					this one also should be read carefully.
+					\item<5->\textbf{Contraints}: These can include constraints on input, time, memory, code size, etc.
+					\item<6->\textbf{Time Limit}: See if your algorithm can work in this range.
+					\item<7->\textbf{Memory Limit}: Usually not a deal breaker (unless you are doing something ghastly!).
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Example I}
+				\uncover<1->{\textbf{Problem}: Consider a currency system in which there are notes of seven denominations, namely, Rs. 1,
+				Rs. 2, Rs. 5, Rs. 10, Rs. 50, Rs. 100. If the sum of Rs. N is input, write a program to computer
+				smallest number of notes that will combine to give Rs. N.}\\
+				\uncover<2->{\textbf{Input}: The first line contains an integer T, total number of testcases.
+				Then follow T lines, each line contains an integer N.}\\
+				\uncover<3->{\textbf{Output}: Display the smallest number of notes that will combine to give N.}\\
+				\uncover<4->{\textbf{Constraints}: $1 \leq T \leq 1000 \quad 1 \leq N \leq 1000000$}\\
+				% \framebreak
+			\end{frame}
+			\begin{frame}{Example II}
+				\uncover<1->{\textbf{Example}:\\\textbf{Input}\\3\\1200\\500\\242\\
+										\textbf{Output}\\12\\5\\7}\\
+				\uncover<2->{\textit{Let us write a program to solve this!}}
+			\end{frame}
+		\subsection{Resources}
+			\begin{frame}{Practice Sites}
+				Here are a few practice site:
+				\pause
+				\begin{itemize}
+					\item<+-> Codeforces
+					\item<+-> Codechef
+					\item<+-> Topcoder
+					\item<+-> Hacker Rank
+					\item<+-> Hacker Earth
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Algorithm and DS}
+				Here are a few learning resources:
+				\pause
+				\begin{itemize}
+					\item<+-> Code Monk $\rightarrow$ \href{https://www.hackerearth.com/practice/codemonk/}{Link}
+					\item<+-> Top Coder DataScience Tutorial $\rightarrow$ \href{https://www.topcoder.com/community/data-science/data-science-tutorials/}{Link}
+					\item<+-> NPTEL Videos \textit{Naveen Garg} (Data structures and Algorithms)
+					\item<+-> Contest Tutorials
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Language Reference}
+				\begin{itemize}
+					\item<+-> Use either C++ or Java . Prefer C++
+					\item<+-> C++ Tutorial $\rightarrow$ \href{http://www.learncpp.com/}{Link}
+					\item<+-> STL Tutorial $\rightarrow$ \href{https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1/}{Link}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Competitions}
+				\begin{itemize}
+					\item<+-> Codeforces Contests \textit{\{Bi Weekly\}}
+					\item<+-> Codechef Long, Lunchtime  \textit{\{Monthly\}}
+					\item<+-> ACM ICPC \textit{\{Most Prestigious Programming Contest\}}
+					\item<+-> Google APAC
+					\item<+-> Facebook Hackercup
+				\end{itemize}
+			\end{frame}
+	\section{Essentials}
+		\begin{frame}{Algorithm Class}
+			Basic class of algorithms:\textit{\{Increasing order of difficulty\}}
+			\pause
+			\begin{itemize}
+				\item<+-> Ad-hoc
+				\item<+-> Greedy
+				\item<+-> Divide and Conquer
+				\item<+-> Dynamic Programming
+				\item<+-> Network Flows
+			\end{itemize}
+		\end{frame}
+		\begin{frame}{Tools Needed}
+			These things are sufficient to practice coding:	
+			\pause
+			\begin{itemize}
+			\item<+-> Simple Text Editor. \textbf{No IDE !}
+			\item<+-> Compiler. GCC is standard
+			\item<+-> Preferably Linux OS (Ubuntu works best)
+			\item<+-> Internet Connection (for problem statements)
+			\item<+-> Online compilers like \href{https://www.ideone.com/}{Ideone} ,
+						\href{https://www.codechef.com/ide}{Codechef IDE} can also be used.
+						\textit{Beware, they are painfully slow}
+			\end{itemize}
+		\end{frame}
+	\section{Example Problems}
+		\begin{frame}
+			Let us look at some basic problems.
+		\end{frame}
+		\begin{frame}{Fibonacci Numbers}
+			Write a program to return $n^{th}$ Fibonacci number.\\
+			Fibonacci numbers follow the series: $0,1,1,2,3,5,8,13,21,\dots$\\
+			What is the complexity of your code ?
+			\pause
+			\uncover<+->{Exponential ?}\\
+			\uncover<+->{If yes, try making it linear\\}
+
+			\uncover<+->{\textbf{Hint}}\\
+			\uncover<+->{\textit{Try writing a recurrence relation}}\\
+			\uncover<+->{$Fib(0) = 0$}\\
+			\uncover<+->{$Fib(1) = 1$}\\
+			\uncover<+->{$Fib(n) = Fib(n-1)+Fib(n-2)\quad,n\geq2$}\\
+		\end{frame}
+		\begin{frame}{Exponentiation}
+			Write a program to calculate $a^b$ given a and b as inputs. Both are natural numbers and the result
+			is expressible in $int$ range.\\
+			\pause
+			\uncover<+->{Did you calculate it as: $\underbrace{a*a*\ldots*a}_{b\text{-times}}$ }\\
+			\uncover<+->{\textit{Can you do better?}}\\
+			\uncover<+->{\textit{Of Course!}}\\
+			\uncover<+->{\textbf{Use Fast Exponentiation!}}\\
+		\end{frame}
+		\begin{frame}{Interval Selection}
+			\uncover<+->{This is a harder problem than the above ones.\\}
+			\uncover<+->{You are given n activities with their start and finish times.
+			Select the maximum number of activities that can be performed by a single person,
+			assuming that a person can only work on a single activity at a time.\\}
+			\uncover<+->{\textit{Try doing it on your own. If nothing comes, then Google! }}
+		\end{frame}
+	\section{Closing Note}
+		\begin{frame}{Important Notes}
+			\uncover<+->{Here are some general closing notes:}
+			\begin{itemize}
+				\item<+-> Practice Regularly.
+				\item<+-> Make a group of enthusiastic people to participate in contests.
+				\item<+-> Practice Regularly.
+			\end{itemize}
+
+
+		\end{frame}
+		\begin{frame}
+			\begin{center}
+				\textbf{Thank You}
+			\end{center}
+		\end{frame}
+\end{document}
